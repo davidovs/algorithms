@@ -1,5 +1,7 @@
 package task4;
 
+import common.ListNode;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -16,7 +18,8 @@ import java.util.Set;
 public class Solution {
 
     public String execute(ListNode[] nodes) {
-        return listNodeToString(mergeMulitpleListNode(nodes));
+        // TODO check for null
+        return mergeMulitpleListNode(nodes).toString();
     }
 
     private ListNode mergeMulitpleListNode(ListNode[] nodes) {
@@ -56,19 +59,5 @@ public class Solution {
         }
 
         return head.next;
-    }
-
-    private String listNodeToString(ListNode listNode) {
-        String result = "";
-
-        while (listNode != null) {
-            result += listNode.val;
-            if (listNode.next != null) {
-                result += "->";
-            }
-            listNode = listNode.next;
-        }
-
-        return result;
     }
 }

@@ -10,10 +10,13 @@ package task3;
  * Definition for singly-linked list.
  */
 
+import common.ListNode;
+
 public class Solution {
 
     public String execute(ListNode node1, ListNode node2) {
-        return listNodeToString(merge(node1, node2));
+        // TODO check for null
+        return merge(node1, node2).toString();
     }
 
     private ListNode merge(ListNode node1, ListNode node2) {
@@ -41,19 +44,5 @@ public class Solution {
         }
 
         return head.next;
-    }
-
-    private String listNodeToString(ListNode listNode) {
-        String result = "";
-
-        while (listNode != null) {
-            result += listNode.val;
-            if (listNode.next != null) {
-                result += "->";
-            }
-            listNode = listNode.next;
-        }
-
-        return result;
     }
 }

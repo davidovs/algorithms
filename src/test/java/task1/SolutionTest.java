@@ -1,5 +1,6 @@
 package task1;
 
+import common.Pair;
 import org.junit.Test;
 
 import java.util.List;

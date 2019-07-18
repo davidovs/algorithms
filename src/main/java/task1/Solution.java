@@ -9,6 +9,8 @@ package task1;
  * Output: [{5, 7}]
  */
 
+import common.Pair;
+
 import java.util.*;
 
 public class Solution {

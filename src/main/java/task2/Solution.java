@@ -1,12 +1,27 @@
 package task2;
 
 /*
- * Find first absent natural number
+ * Given an unsorted integer array, find the smallest missing positive integer.
  *
- * Find first absent natural number and return it. Complexity must be O(n), memory O(1).
- * Example:
- * Input: {5, -3, 2, 7, -4, 0, 1}
+ * Example 1:
+ * Input: [1,2,0]
  * Output: 3
+ *
+ * Example 2:
+ * Input: [3,4,-1,1]
+ * Output: 2
+ *
+ * Example 3:
+ * Input: [7,8,9,11,12]
+ * Output: 1
+ *
+ * Example 3:
+ * Input: [5, -3, 2, 7, -4, 0, 1]
+ * Output: 3
+ *
+ * Note:
+ *
+ * Your algorithm should run in O(n) time and uses constant extra space.
  */
 
 public class Solution {
@@ -42,9 +57,9 @@ public class Solution {
             rightValue = array[leftValue - 1];
 
             if (rightValue == 0 || rightValue == leftValue) {
-                 array[leftValue - 1] = leftValue;
-                 array[position - 1] = 0;
-                 position++;
+                array[leftValue - 1] = leftValue;
+                array[position - 1] = 0;
+                position++;
             } else {
                 array[leftValue - 1] = leftValue;
                 array[position - 1] = rightValue;

@@ -1,4 +1,4 @@
-package task1;
+package common;
 
 public final class Pair<L, R> {
 
