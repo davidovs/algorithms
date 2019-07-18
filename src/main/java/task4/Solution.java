@@ -14,13 +14,12 @@ import java.util.Set;
  */
 
 public class Solution {
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int value) { val = value; }
+
+    public String mergeMulitple(ListNode[] nodes) {
+        return listNodeToString(mergeMulitpleListNode(nodes));
     }
 
-    private ListNode mergeMulitple(ListNode[] nodes) {
+    private ListNode mergeMulitpleListNode(ListNode[] nodes) {
 
         ListNode head = new ListNode(0);
         ListNode prevNode = head;
@@ -59,54 +58,17 @@ public class Solution {
         return head.next;
     }
 
-    public void runMergeMulitple() {
-        ListNode listNode11 = new ListNode(1);
+    private String listNodeToString(ListNode listNode) {
+        String result = "";
 
-        ListNode listNode12 = new ListNode(2);
-        listNode11.next = listNode12;
-
-        ListNode listNode13 = new ListNode(4);
-        listNode12.next = listNode13;
-
-
-        ListNode listNode21 = new ListNode(1);
-
-        ListNode listNode22 = new ListNode(3);
-        listNode21.next = listNode22;
-
-        ListNode listNode23 = new ListNode(4);
-        listNode22.next = listNode23;
-
-
-        ListNode listNode31 = new ListNode(0);
-
-        ListNode listNode32 = new ListNode(1);
-        listNode31.next = listNode32;
-
-        ListNode listNode33 = new ListNode(2);
-        listNode32.next = listNode33;
-
-        ListNode listNode34 = new ListNode(3);
-        listNode33.next = listNode34;
-
-        ListNode listNode35 = new ListNode(4);
-        listNode34.next = listNode35;
-
-        ListNode listNode36 = new ListNode(5);
-        listNode35.next = listNode36;
-
-        ListNode[] listNodeArray = {listNode11, listNode21, listNode31};
-
-        printList(mergeMulitple(listNodeArray));
-    }
-
-    private void printList(ListNode listNode) {
         while (listNode != null) {
-            System.out.print(listNode.val);
+            result += listNode.val;
             if (listNode.next != null) {
-                System.out.print("->");
+                result += "->";
             }
             listNode = listNode.next;
         }
+
+        return result;
     }
 }

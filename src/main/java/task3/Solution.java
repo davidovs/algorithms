@@ -11,10 +11,9 @@ package task3;
  */
 
 public class Solution {
-    class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int value) { val = value; }
+
+    public String get(ListNode node1, ListNode node2) {
+        return listNodeToString(merge(node1, node2));
     }
 
     private ListNode merge(ListNode node1, ListNode node2) {
@@ -44,34 +43,17 @@ public class Solution {
         return head.next;
     }
 
-    public void runMerge() {
-        ListNode listNode11 = new ListNode(1);
+    private String listNodeToString(ListNode listNode) {
+        String result = "";
 
-        ListNode listNode12 = new ListNode(2);
-        listNode11.next = listNode12;
-
-        ListNode listNode13 = new ListNode(4);
-        listNode12.next = listNode13;
-
-
-        ListNode listNode21 = new ListNode(1);
-
-        ListNode listNode22 = new ListNode(3);
-        listNode21.next = listNode22;
-
-        ListNode listNode23 = new ListNode(4);
-        listNode22.next = listNode23;
-
-        printList(merge(listNode11, listNode21));
-    }
-
-    private void printList(ListNode listNode) {
         while (listNode != null) {
-            System.out.print(listNode.val);
+            result += listNode.val;
             if (listNode.next != null) {
-                System.out.print("->");
+                result += "->";
             }
             listNode = listNode.next;
         }
+
+        return result;
     }
 }
