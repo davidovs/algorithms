@@ -4,19 +4,43 @@ package task2;
  * Given an unsorted integer array, find the smallest missing positive integer.
  *
  * Example 1:
- * Input: [1,2,0]
+ * Input: [1, 2, 0]
  * Output: 3
  *
  * Example 2:
- * Input: [3,4,-1,1]
+ * Input: [3, 4, -1, 1]
  * Output: 2
  *
  * Example 3:
- * Input: [7,8,9,11,12]
+ * Input: [7, 8, 9, 11, 12]
  * Output: 1
  *
- * Example 3:
+ * Example 4:
  * Input: [5, -3, 2, 7, -4, 0, 1]
+ * Output: 3
+ *
+ * Example 5:
+ * Input: [1, 2, 3, 4]
+ * Output: 5
+ *
+ * Example 6:
+ * Input: [4, 3, 2, 1]
+ * Output: 5
+ *
+ * Example 7:
+ * Input: [1, -2, 3, -4]
+ * Output: 2
+ *
+ * Example 8:
+ * Input: [-4, -3, -2, -1]
+ * Output: 1
+ *
+ * Example 9:
+ * Input: [0, -3, 2, -1]
+ * Output: 1
+ *
+ * Example 10:
+ * Input: [2, 1, 2, 0]
  * Output: 3
  *
  * Note:
@@ -74,7 +98,7 @@ public class Solution {
             }
         }
 
-        throw new RuntimeException("Algorithm is incorrect.");
+        return array.length + 1;
     }
 
     private void validate(int[] array) {
