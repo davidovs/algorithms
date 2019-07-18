@@ -9,10 +9,8 @@ public class SolutionTest {
     private Solution solution = new Solution();
 
     @Test
-    public void runMergeMulitple() {
-
-        assertEquals(solution.mergeMulitple(getListNodeArray()), "0->1->1->1->2->2->3->3->4->4->4->5");
-
+    public void test1() {
+        assertEquals(solution.execute(getListNodeArray()), "0->1->1->1->2->2->3->3->4->4->4->5");
     }
 
     private ListNode[] getListNodeArray() {

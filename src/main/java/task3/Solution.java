@@ -12,7 +12,7 @@ package task3;
 
 public class Solution {
 
-    public String get(ListNode node1, ListNode node2) {
+    public String execute(ListNode node1, ListNode node2) {
         return listNodeToString(merge(node1, node2));
     }
 

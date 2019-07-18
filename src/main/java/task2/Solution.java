@@ -13,23 +13,42 @@ public class Solution {
 
     private static final int DEFAULT_RESULT = 1;
 
-    private int search(int[] array) {
+    public int execute(int[] array) {
         if (array == null) {
             return DEFAULT_RESULT;
         }
 
-        int result;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 0 || array[i] > array.length) {
+                array[i] = 0;
+            }
+        }
 
         // 1 .. array.length
         int position = 1;
 
-        int buffer;
+        int leftValue;
+
+        int rightValue;
 
         while (position <= array.length) {
-            if (array[position - 1] <= 0 || array[position - 1] > array.length) {
+            leftValue = array[position - 1];
 
+            if (leftValue == 0 || leftValue == position) {
+                position++;
+                continue;
             }
 
+            rightValue = array[leftValue - 1];
+
+            if (rightValue == 0 || rightValue == leftValue) {
+                 array[leftValue - 1] = leftValue;
+                 array[position - 1] = 0;
+                 position++;
+            } else {
+                array[leftValue - 1] = leftValue;
+                array[position - 1] = rightValue;
+            }
         }
 
         validate(array);
@@ -49,11 +68,5 @@ public class Solution {
                 throw new RuntimeException("Algorithm is incorrect.");
             }
         }
-    }
-
-    public void runSearch() {
-        int[] array = {5, -3, 2, 7, -4, 0, 1};
-
-        System.out.println(search(array));
     }
 }

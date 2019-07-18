@@ -9,8 +9,8 @@ public class SolutionTest {
     private Solution solution = new Solution();
 
     @Test
-    public void runMerge() {
-        assertEquals(solution.get(getListNode1(), getListNode2()), "1->1->2->3->4->4");
+    public void test1() {
+        assertEquals(solution.execute(getListNode1(), getListNode2()), "1->1->2->3->4->4");
     }
 
     private ListNode getListNode1() {

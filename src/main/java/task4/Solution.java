@@ -15,7 +15,7 @@ import java.util.Set;
 
 public class Solution {
 
-    public String mergeMulitple(ListNode[] nodes) {
+    public String execute(ListNode[] nodes) {
         return listNodeToString(mergeMulitpleListNode(nodes));
     }
 

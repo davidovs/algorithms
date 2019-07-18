@@ -13,7 +13,7 @@ import java.util.*;
 
 public class Solution {
 
-    public List<Pair> search(int[] array, long summ) {
+    public List<Pair> execute(int[] array, long summ) {
         if (array == null || array.length < 2) {
             return Collections.emptyList();
         }
