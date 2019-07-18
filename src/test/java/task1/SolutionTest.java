@@ -1,10 +1,11 @@
 package task1;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class SolutionTest {
 
@@ -12,7 +13,7 @@ public class SolutionTest {
 
     @Test
     public void search() {
-        List<Pair> list = solution.search(new int[] {5, -3, 2, 7, -4, 0, 1}, 12);
+        List<Pair> list = solution.search(new int[]{5, -3, 2, 7, -4, 0, 1}, 12);
 
         assertNotNull(list);
         assertEquals(list.size(), 1);

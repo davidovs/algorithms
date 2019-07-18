@@ -2,7 +2,7 @@ package task4;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class SolutionTest {
 
@@ -52,6 +52,6 @@ public class SolutionTest {
         ListNode listNode36 = new ListNode(5);
         listNode35.next = listNode36;
 
-        return new ListNode[] {listNode11, listNode21, listNode31};
+        return new ListNode[]{listNode11, listNode21, listNode31};
     }
 }
