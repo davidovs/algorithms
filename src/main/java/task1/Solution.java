@@ -9,12 +9,41 @@ package task1;
  * Output: [{5, 7}]
  */
 
+import java.util.*;
+
 public class Solution {
 
-    private static final int DEFAULT_RESULT = 1;
+    public List<Pair> search(int[] array, long summ) {
+        if (array == null || array.length < 2) {
+            return Collections.emptyList();
+        }
 
-    private int search(int[] array, long summ) {
-        // TODO
-        return 0;
+        List<Pair> result = new ArrayList<>();
+
+        Map<Integer, Object> map = new HashMap();
+
+        for (int i = 0; i < array.length; i++) {
+            map.put(array[i], null);
+        }
+
+        long deltaLong;
+        int deltaInt;
+
+        for (int i = 0; i < array.length; i++) {
+            deltaLong = summ - array[i];
+
+            if (deltaLong < Integer.MIN_VALUE || deltaLong > Integer.MAX_VALUE) {
+                continue;
+            }
+
+            deltaInt = (int) deltaLong;
+
+            if (map.containsKey(deltaInt)) {
+                result.add(Pair.of(array[i], deltaInt));
+                map.remove(array[i]);
+            }
+        }
+
+        return result;
     }
 }

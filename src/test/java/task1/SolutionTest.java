@@ -1,16 +1,22 @@
 package task1;
 
-//import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-class SolutionTest {
+import org.junit.Test;
+
+import java.util.List;
+
+public class SolutionTest {
 
     private Solution solution = new Solution();
 
-//    @org.junit.jupiter.api.BeforeEach
-    void setUp() {
-    }
+    @Test
+    public void search() {
+        List<Pair> list = solution.search(new int[] {5, -3, 2, 7, -4, 0, 1}, 12);
 
-//    @org.junit.jupiter.api.AfterEach
-    void tearDown() {
+        assertNotNull(list);
+        assertEquals(list.size(), 1);
+        assertEquals(list.get(0).getLeft(), 5);
+        assertEquals(list.get(0).getRight(), 7);
     }
 }
