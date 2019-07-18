@@ -1,17 +1,12 @@
 package cf.b707bakery;
 
 /*
- *
+ * TODO description
  */
-
-import java.util.Scanner;
 
 public class Solution {
 
-    public void execute() {
-        Scanner scanner = new Scanner(System.in);
-
-        String line1 = scanner.nextLine();
+    public void execute(String line1) {
 
         // TODO
 

@@ -1,16 +1,24 @@
 package cf.a1055metro;
 
-import org.junit.Test;
+import org.junit.Assert;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class SolutionTest {
 
     private Solution solution = new Solution();
 
-//    @Test
+    //    @Test
     public void test() {
-        // TODO assert
-        solution.execute();
+
+        // TODO init
+
+        String line1 = "";
+
+        String line2 = "";
+
+        String line3 = "";
+
+        assertEquals(solution.execute(line1, line2, line3), "TODO");
     }
 }

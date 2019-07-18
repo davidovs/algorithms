@@ -1,16 +1,18 @@
 package cf.b707bakery;
 
-import org.junit.Test;
-
-import static org.junit.Assert.*;
-
 public class SolutionTest {
 
     private Solution solution = new Solution();
 
-//    @Test
+    //    @Test
     public void test() {
+
+        // TODO init
+
+        String line1 = "";
+
+        solution.execute(line1);
+
         // TODO assert
-        solution.execute();
     }
 }
