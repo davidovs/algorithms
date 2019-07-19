@@ -33,16 +33,16 @@ public class Solution {
             nodesSet.add(node);
         }
 
-        int min;
+        int minVal;
         ListNode minNode;
 
         while (!nodesSet.isEmpty()) {
-            min = Integer.MAX_VALUE;
+            minVal = Integer.MAX_VALUE;
             minNode = null;
 
             for (ListNode node : nodesSet) {
-                if (node.val <= min) {
-                    min = node.val;
+                if (node.val < minVal) {
+                    minVal = node.val;
                     minNode = node;
                 }
             }
