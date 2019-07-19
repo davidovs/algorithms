@@ -1,4 +1,4 @@
-package cf.b707bakery;
+package cf.b707;
 
 public class SolutionTest {
 

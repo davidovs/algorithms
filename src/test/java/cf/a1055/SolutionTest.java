@@ -1,6 +1,4 @@
-package cf.a1055metro;
-
-import org.junit.Assert;
+package cf.a1055;
 
 import static org.junit.Assert.assertEquals;
 
