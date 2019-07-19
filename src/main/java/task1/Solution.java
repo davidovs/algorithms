@@ -1,6 +1,6 @@
 package task1;
 
-/*
+/**
  * Find all pairs for given summ
  *
  * Find all pairs for given summ and return them. Complexity must be O(n).

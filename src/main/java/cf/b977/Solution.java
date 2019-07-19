@@ -128,8 +128,11 @@ public class Solution {
 
 class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
         // TODO
         Solution solution = new Solution();
+//        solution.execute()
         // TODO
     }
 }

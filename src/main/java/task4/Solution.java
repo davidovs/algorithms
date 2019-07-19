@@ -3,9 +3,10 @@ package task4;
 import common.ListNode;
 
 import java.util.HashSet;
+import java.util.Scanner;
 import java.util.Set;
 
-/*
+/**
  * Merge Many Sorted Lists
  *
  * Merge many sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
@@ -59,5 +60,16 @@ public class Solution {
         }
 
         return head.next;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // TODO
+        Solution solution = new Solution();
+//        solution.execute()
+        // TODO
     }
 }

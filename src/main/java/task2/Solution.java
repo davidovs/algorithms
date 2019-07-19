@@ -1,6 +1,8 @@
 package task2;
 
-/*
+import java.util.Scanner;
+
+/**
  * Given an unsorted integer array, find the smallest missing positive integer.
  *
  * Example 1:
@@ -107,5 +109,16 @@ public class Solution {
                 throw new RuntimeException("Algorithm is incorrect.");
             }
         }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // TODO
+        Solution solution = new Solution();
+//        solution.execute()
+        // TODO
     }
 }

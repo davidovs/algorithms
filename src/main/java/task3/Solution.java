@@ -1,6 +1,6 @@
 package task3;
 
-/*
+/**
  * Merge Two Sorted Lists
  *
  * Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
@@ -11,6 +11,8 @@ package task3;
  */
 
 import common.ListNode;
+
+import java.util.Scanner;
 
 public class Solution {
 
@@ -44,5 +46,16 @@ public class Solution {
         }
 
         return head.next;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // TODO
+        Solution solution = new Solution();
+//        solution.execute()
+        // TODO
     }
 }
