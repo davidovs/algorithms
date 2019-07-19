@@ -15,6 +15,8 @@ import java.util.*;
 
 public class Solution {
 
+    // TODO check for the case {7, 2, 3}, summ = 14
+
     public List<Pair> execute(int[] array, long summ) {
         if (array == null || array.length < 2) {
             return Collections.emptyList();
@@ -22,6 +24,7 @@ public class Solution {
 
         List<Pair> result = new ArrayList<>();
 
+        // TODO fix, use Value of map for this
         Map<Integer, Object> map = new HashMap();
 
         for (int i = 0; i < array.length; i++) {

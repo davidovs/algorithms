@@ -1,6 +1,7 @@
 package task1;
 
 import common.Pair;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -20,5 +21,23 @@ public class SolutionTest {
         assertEquals(list.size(), 1);
         assertEquals(list.get(0).getLeft(), 5);
         assertEquals(list.get(0).getRight(), 7);
+    }
+
+    // TODO fix the solution to meet this test
+    @Ignore
+    @Test
+    public void test2() {
+        List<Pair> list = solution.execute(new int[]{5, -3, 0, 1}, 10);
+
+        assertNotNull(list);
+        assertEquals(list.size(), 0);
+    }
+
+    @Test
+    public void test3() {
+        List<Pair> list = solution.execute(new int[]{5, -3, 0, 1}, 11);
+
+        assertNotNull(list);
+        assertEquals(list.size(), 0);
     }
 }
