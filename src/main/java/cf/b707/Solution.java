@@ -2,8 +2,8 @@ package cf.b707;
 
 /**
  * B. Bakery
- * time limit per test2 seconds
- * memory limit per test256 megabytes
+ * time limit per test 2 seconds
+ * memory limit per test 256 megabytes
  * inputstandard input
  * outputstandard output
  * Masha wants to open her own bakery and bake muffins in one of the n cities numbered from 1 to n. There are m bidirectional roads, each of whose connects some pair of cities.
@@ -49,19 +49,49 @@ package cf.b707;
  * Image illustrates the first sample case. Cities with storage located in and the road representing the answer are darkened.
  */
 
+import java.util.Scanner;
+
 public class Solution {
 
-    public void execute(String line1) {
+    public int execute(int[] array1, int[][] array2) {
+        int n = array1[0];
+        int m = array1[1];
+        int k = array1[2];
+
+        if (m != array2.length) {
+            throw new IllegalArgumentException("m must be equal to lines array size");
+        }
+
 
         // TODO
-
+        return -1;
     }
 }
 
+// TODO check
 class Main {
     public static void main(String[] args) {
-        // TODO
+        Scanner scanner = new Scanner(System.in);
+        String line1 = scanner.nextLine();
+        String[] array1String = line1.split(" ");
+
+        int n = Integer.parseInt(array1String[0]);
+        int m = Integer.parseInt(array1String[1]);
+        int k = Integer.parseInt(array1String[2]);
+        int[] array1 = {n, m, k};
+
+        int[][] array2 = new int[m][];
+        for (int i = 0; i < m; i++) {
+            array2[i] = new int[3];
+            String[] array = scanner.nextLine().split(" ");
+            for (int j = 0; j < 3; j++) {
+                // initialization of: u, v, l
+                array2[i][j] = Integer.parseInt(array[j]);
+            }
+        }
+        scanner.close();
+
         Solution solution = new Solution();
-        // TODO
+        System.out.println(solution.execute(array1, array2));
     }
 }

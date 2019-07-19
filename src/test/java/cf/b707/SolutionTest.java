@@ -1,18 +1,31 @@
 package cf.b707;
 
+import org.junit.Ignore;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
 public class SolutionTest {
 
     private Solution solution = new Solution();
 
-    //    @Test
-    public void test() {
+    @Ignore
+    @Test
+    public void test1() {
+        int[] array1 = {5, 4, 2};
 
-        // TODO init
+        int[][] array2 = new int[][]{{1, 2, 5}, {1, 2, 3}, {2, 3, 4}, {1, 4, 10}, {1, 5}};
 
-        String line1 = "";
+        assertEquals(solution.execute(array1, array2), 3);
+    }
 
-        solution.execute(line1);
+    @Ignore
+    @Test
+    public void test2() {
+        int[] array1 = {3, 1, 1};
 
-        // TODO assert
+        int[][] array2 = new int[][]{{1, 2, 3}, {3}};
+
+        assertEquals(solution.execute(array1, array2), -1);
     }
 }

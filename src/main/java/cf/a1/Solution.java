@@ -2,8 +2,8 @@ package cf.a1;
 
 /**
  * A. Theatre Square
- * time limit per test1 second
- * memory limit per test256 megabytes
+ * time limit per test 1 second
+ * memory limit per test 256 megabytes
  * inputstandard input
  * outputstandard output
  * Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city's anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.

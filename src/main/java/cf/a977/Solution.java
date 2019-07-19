@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 /**
  * A. Wrong Subtraction
- * time limit per test1 second
- * memory limit per test256 megabytes
+ * time limit per test 1 second
+ * memory limit per test 256 megabytes
  * inputstandard input
  * outputstandard output
  * Little girl Tanya is learning how to decrease a number by one, but she does it wrong with a number consisting of two or more digits. Tanya subtracts one from a number by the following algorithm:
