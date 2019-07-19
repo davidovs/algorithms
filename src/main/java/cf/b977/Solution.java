@@ -41,7 +41,7 @@ import java.util.Scanner;
 
 public class Solution {
 
-    public String execute() {
+    public String execute(long n, long k) {
         return "TODO";
     }
 
@@ -126,13 +126,15 @@ public class Solution {
     }
 }
 
+// TODO check
 class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        long n = scanner.nextLong();
+        long k = scanner.nextLong();
+        scanner.close();
 
-        // TODO
         Solution solution = new Solution();
-//        solution.execute()
-        // TODO
+        solution.execute(n, k);
     }
 }

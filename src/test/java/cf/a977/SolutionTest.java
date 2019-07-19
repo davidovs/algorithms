@@ -10,33 +10,11 @@ public class SolutionTest {
 
     @Test
     public void test1() {
-
-        // TODO init
-
-//                * inputCopy
-//                * 512 4
-//                * outputCopy
-//                * 50
-
-//        solution.execute();
-
-        // TODO assert
-
+        assertEquals(solution.execute(512, 4), 50);
     }
 
     @Test
     public void test2() {
-
-        // TODO init
-
-//                * inputCopy
-//                * 1000000000 9
-//                * outputCopy
-//                * 1
-
-//        solution.execute();
-
-        // TODO assert
-
+        assertEquals(solution.execute(1000000000, 9), 1);
     }
 }

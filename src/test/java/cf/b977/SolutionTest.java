@@ -9,13 +9,13 @@ public class SolutionTest {
     private Solution solution = new Solution();
 
     @Test
-    public void execute() {
+    public void test1() {
 
         // TODO init
 
         String line1 = "";
 
-        solution.execute();
+//        solution.execute();
 
         // TODO assert
     }

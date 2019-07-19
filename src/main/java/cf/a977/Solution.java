@@ -55,10 +55,10 @@ public class Solution {
 
 class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        long n = in.nextLong();
-        long k = in.nextLong();
-        in.close();
+        Scanner scanner = new Scanner(System.in);
+        long n = scanner.nextLong();
+        long k = scanner.nextLong();
+        scanner.close();
 
         Solution solution = new Solution();
         System.out.println(solution.execute(n, k));
