@@ -4,10 +4,16 @@ package task1;
  * Find all pairs for given summ
  *
  * Find all pairs for given summ and return them. Complexity must be O(n).
- * Example:
+ * Example 1:
  * Input: {5, -3, 2, 7, -4, 0, 1}, sum = 12
  * Output: [{5, 7}]
+ *
+ * Example 2:
+ * Input: {3,2,8,4,9,0,6,7}, sum = 10
+ * Output: [{ ,}]
  */
+
+// TODO make task returning unique Sets
 
 import common.Pair;
 

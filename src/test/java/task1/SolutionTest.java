@@ -21,6 +21,7 @@ public class SolutionTest {
         assertEquals(list.size(), 1);
         assertEquals(list.get(0).getLeft(), 5);
         assertEquals(list.get(0).getRight(), 7);
+        // TODO create smart assert check
     }
 
     // TODO fix the solution to meet this test
@@ -39,5 +40,15 @@ public class SolutionTest {
 
         assertNotNull(list);
         assertEquals(list.size(), 0);
+    }
+
+    @Ignore
+    @Test
+    public void test4() {
+        List<Pair> list = solution.execute(new int[]{3,2,8,4,9,0,6,7}, 10);
+
+        assertNotNull(list);
+        assertEquals(list.size(), 3);
+        // TODO create smart assert check
     }
 }
