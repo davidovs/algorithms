@@ -55,6 +55,11 @@ public class SolutionTest {
 
     @Test
     public void test9() {
+        assertFalse(solution.execute(Arrays.asList(1, 2, 2, 3, 0), Arrays.asList(3, 2, 0, 1, 1)));
+    }
+
+    @Test
+    public void test10() {
         assertTrue(solution.execute(Arrays.asList(1, 2, 1, -1, 3, 0, -1), Arrays.asList(-1, 3, 2, -1, 0, 1, 1)));
     }
 }
