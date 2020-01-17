@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'groovy'
 }
 
 group 'algorithms'
@@ -13,4 +14,5 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4-rc-2"
 }
